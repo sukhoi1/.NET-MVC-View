@@ -134,6 +134,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AnotherController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -159,6 +160,14 @@
     <Content Include="Views\Home\Layout.cshtml" />
     <Content Include="Views\Shared\Partial.cshtml" />
     <Content Include="Views\Shared\_LayoutForPartial.cshtml" />
+    <Content Include="Views\Home\Section.cshtml" />
+    <Content Include="Views\Shared\_LayoutSection.cshtml" />
+    <Content Include="Views\Home\SectionOptional.cshtml" />
+    <Content Include="Views\Home\Partial.cshtml" />
+    <Content Include="Views\Another\Index.cshtml" />
+    <Content Include="Views\Home\ViewNoModel.cshtml" />
+    <Content Include="Views\Home\ChildAction.cshtml" />
+    <Content Include="Views\Home\ChildActionAttribute.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

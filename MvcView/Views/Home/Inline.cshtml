@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Inline";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = TempData["SkipLayout"] == null || TempData["SkipLayout"] != null && (bool)TempData["SkipLayout"] != true ? "~/Views/Shared/_Layout.cshtml" : null;
 }
 
 <h2>Inline - view source code for details</h2>
