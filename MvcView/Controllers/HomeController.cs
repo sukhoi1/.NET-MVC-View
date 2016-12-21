@@ -15,5 +15,15 @@ namespace MvcView.Controllers
             data.Add("Placeholder Property", "Placeholder Value");
             return View("~/Views/Shared/Many.cshtml", (object)data);
         }
+
+        public ActionResult Inline()
+        {
+            return View();
+        }
+
+        public ActionResult Layout()
+        {
+            return View();
+        }
     }
 }

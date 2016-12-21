@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Inline";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Inline - view source code for details</h2>
+
+@functions {
+    // Create a variable to store the age.
+    int userAge = 0;
+
+    // Pass a user name to this method.
+    string HelloMessage(string user)
+    {
+        var msg = "Hi " + user + ", how are you?";
+        return msg;
+    }
+
+    int Age
+    {
+        get
+        {
+            return userAge;
+        } 
+        set
+        {
+            userAge = value;
+        }
+    }
+}
+
+@{
+    userAge = 99;
+    Age = 100;
+}
+
+
+<p>The value of the <code>HelloMessage</code> method: @HelloMessage("James")</p>
+
+<!-- Because the Age property is typed as an int (a number),
+     you must convert it to a string to display the value.
+-->
+<p>The value of the <code>Age</code> property: @Age.ToString()</p>
